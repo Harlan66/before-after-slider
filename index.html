@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片对比工具 (Image Slider Comparison)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- 上方控制区 -->
+        <div class="controls-area">
+            <div class="input-group">
+                <label for="uploadA" class="btn">上传图 A (左)</label>
+                <input type="file" id="uploadA" accept="image/*">
+                <span id="statusA" class="status">未选择</span>
+            </div>
+            
+            <div class="input-group">
+                <label for="uploadB" class="btn">上传图 B (右)</label>
+                <input type="file" id="uploadB" accept="image/*">
+                <span id="statusB" class="status">未选择</span>
+            </div>
+
+            <button id="exportBtn" class="btn primary">下载结果</button>
+        </div>
+
+        <!-- 中央展示区 -->
+        <div class="canvas-wrapper" id="canvasWrapper">
+            <canvas id="compareCanvas"></canvas>
+            <div id="loadingMsg">请上传两张图片以开始对比</div>
+        </div>
+
+        <!-- 底部提示区 -->
+        <div class="footer-area">
+            <p>操作指南：上传两张图片后，左右拖动滑块查看对比效果。点击“下载结果”保存当前对比图。</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
