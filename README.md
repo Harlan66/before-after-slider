@@ -1,2 +1,39 @@
-# before-after-slider
-一个基于 HTML5 Canvas 的本地图片对比工具。支持拖拽滑块调整比例，无重叠拼接，并可导出无水印的高清对比图。  A lightweight, local image comparison tool using HTML5 Canvas. Supports drag-to-compare and exporting high-quality merged images.
+# 图片滑块对比工具 (Image Slider Comparison)
+
+这是一个轻量级的、基于浏览器的本地图片对比工具。用户可以上传两张图片（如修图前/修图后），通过拖动中间的分割线直观地查看差异，并支持将调整好比例的对比图导出到本地。
+
+![Demo](https://via.placeholder.com/800x400?text=Preview+Image+Here)
+*(建议：之后你可以把你那张金鱼对比的截图放进仓库里，替换上面这个链接)*
+
+## ✨ 功能特点 (Features)
+
+* **隐私安全**：纯前端运行 (HTML5 + Canvas)，所有图片处理均在本地浏览器完成，不会上传到服务器。
+* **无重叠拼接**：采用遮罩 (Clip) 技术，而非简单的图层叠加，保证对比清晰。
+* **高清导出**：支持一键导出当前的对比结果，自动隐藏 UI 控件（拖拽手柄），所见即所得。
+* **自适应高度**：自动以第一张图的高度为基准，等比缩放第二张图，确保拼接完美对齐。
+
+## 🚀 使用方法 (How to use)
+
+1.  **在线使用**: [点击这里使用](https://harlan66.github.io/滑块对比/)
+    *(注意：等你开启 GitHub Pages 后，把链接换成你自己的)*
+2.  **本地使用**:
+    * 下载本项目中的 `index.html` 文件。
+    * 双击在浏览器（Chrome, Edge, Safari 等）中打开即可。
+
+## 🛠️ 技术栈 (Tech Stack)
+
+* HTML5
+* CSS3
+* JavaScript (Canvas API)
+
+## 📝 更新日志 (Changelog)
+
+### v1.0.1 (Fix)
+* 🐛 **修复**：修复了导出图片时，中间的拖拽手柄图标（⚪）被错误地保存进图片的问题。现在导出时会自动隐藏 UI 控件，只保留纯净的分割线。
+
+### v1.0.0
+* 🎉 初始版本发布，支持基础的上传、拖拽和下载功能。
+
+## 📄 License
+
+本项目采用 [MIT License](LICENSE) 开源协议。
